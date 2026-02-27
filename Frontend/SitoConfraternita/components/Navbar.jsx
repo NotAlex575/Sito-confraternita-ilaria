@@ -3,41 +3,34 @@ import React from "react";
 
 const Navbar = () => {
   return (
+    <>
         <nav
-            className="navbar navbar-expand-lg"
+            className="navbar navbar-expand-lg fixed-top border border-2 border-black bg-light"
             style={{
                 minHeight: "100px",
-                backgroundColor: "#4b2e2e",
-                color: "#f5f0e6"
+                color: "#f5f0e6",
             }}
         >
       <div className="container-fluid d-flex justify-content-between align-items-center">
         <div>
-            <a className="navbar-brand text-light" href="#">
-                INSERIRE IMMAGINE QUI
+            <a className="navbar-brand" href="#">
+                <img src="./public/img/Logo.png" alt="" style={{
+                    height: "200px"
+                }} />
             </a>
         </div>
 
         <div>
-            <button
-                className="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-                style={{
-                    borderColor: "#f5f0e6"
-                }}
-            >
-                <span
-                    className="navbar-toggler-icon"
-                    style={{
-                        filter: "invert(1)"
-                    }}
-                ></span>
-            </button>
+            <button 
+                className="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation" 
+            > <span className="navbar-toggler-icon"></span>
+             </button>
 
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
@@ -45,7 +38,7 @@ const Navbar = () => {
                 {/*  CHI SIAMO */}
                 <li className="nav-item dropdown">
                 <a
-                    className="nav-link text-light"
+                    className="nav-link"
                     href="#"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -81,7 +74,7 @@ const Navbar = () => {
 
                 <li className="nav-item dropdown">
                 <a
-                    className="nav-link text-light"
+                    className="nav-link"
                     href="#"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -127,7 +120,7 @@ const Navbar = () => {
 
                 <li className="nav-item dropdown">
                     <a
-                        className="nav-link text-light"
+                        className="nav-link"
                         href="#"
                         role="button"
                         data-bs-toggle="dropdown"
@@ -153,7 +146,7 @@ const Navbar = () => {
 
                 <li className="nav-item dropdown">
                     <a
-                        className="nav-link text-light"
+                        className="nav-link"
                         href="#"
                         role="button"
                         data-bs-toggle="dropdown"
@@ -184,7 +177,7 @@ const Navbar = () => {
 
                 <li className="nav-item dropdown">
                     <a
-                        className="nav-link text-light"
+                        className="nav-link"
                         href="#"
                         role="button"
                         data-bs-toggle="dropdown"
@@ -210,7 +203,7 @@ const Navbar = () => {
 
                 <li className="nav-item dropdown">
                     <a
-                        className="nav-link text-light"
+                        className="nav-link"
                         href="#"
                         role="button"
                         data-bs-toggle="dropdown"
@@ -238,6 +231,8 @@ const Navbar = () => {
         
       </div>
     </nav>
+    <div style={{paddingBottom: "220px"}}></div>
+    </>
   );
 }
 
