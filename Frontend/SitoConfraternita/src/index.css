@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.width-100per{
+    width: 100%;
+    display: block; 
+}
+
+.width-screen{
+    width: 100%;
+}
+
+.font-size-header{
+    font-size: 19px;
+}
+
+.ml-menu{
+    margin-left: 65x;
+}
