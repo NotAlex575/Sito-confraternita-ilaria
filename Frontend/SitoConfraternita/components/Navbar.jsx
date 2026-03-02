@@ -14,7 +14,7 @@ const Navbar = () => {
 
      {/* LOGO SITO NAVBAR SINISTRA */}
       <div className="container-fluid d-flex justify-content-between align-items-center border-0">
-        <div className="d-flex justify-content-between align-items-center">
+        <div className="d-flex justify-content-start align-items-center">
             <div className="border-0">
                 <a className="navbar-brand" href="#">
                     <img src="./img/Logo.png" alt="" style={{
@@ -22,13 +22,20 @@ const Navbar = () => {
                     }} />
                 </a>
             </div>
+        </div>
+        <div className="d-flex justify-content-between align-items-center">
 
-
-            {/* MENU HAMBURGER RESPONSIVE DESTRA */}
-            <div>
+            {/* LINK GUIDA PER LE PAGINE */}
+            <div style={{
+                position: "absolute",
+                left: "50%",
+                transform: "translateX(-50%)"
+            }}>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul className="navbar-nav me-auto mb-2 mb-lg-0 font-size-header d-flex ml-menu">
-
+                    <ul
+                        className="menu-header navbar-nav mb-2 mb-lg-0 font-size-header d-flex flex-nowrap"
+                        style={{ whiteSpace: "nowrap" }}
+                    >
                     {/*  CHI SIAMO */}
                     <li className="nav-item dropdown">
                     <a
@@ -222,6 +229,7 @@ const Navbar = () => {
                 </div>
             </div>
         </div>
+        {/* MENU HAMBURGER RESPONSIVE DESTRA */}
         <button 
                 className="navbar-toggler" 
                 type="button" 
@@ -232,8 +240,6 @@ const Navbar = () => {
                 aria-label="Toggle navigation" 
             > <span className="navbar-toggler-icon"></span>
         </button>
-
-        
       </div>
     </nav>
     <div style={{paddingBottom: "220px"}}></div>
